@@ -1,20 +1,16 @@
 package com.example.forum.utils;
-import java.io.Serializable; 
-import java.util.Base64; 
-import java.util.Date; 
-import java.util.HashMap; 
-import java.util.Map; 
-import org.springframework.beans.factory.annotation.Value; 
+import java.io.Serializable;
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.auth0.jwt.exceptions.JWTCreationException;
-import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.auth0.jwt.interfaces.JWTVerifier;
-import com.example.forum.dto.GoogleUserDetails;
-import com.example.forum.dto.User;
+import com.example.forum.models.dto.GoogleUserDetails;
+import com.example.forum.models.dto.User;
 
 @Component 
 public class JwtManager implements Serializable {

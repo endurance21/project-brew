@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.forum.dto.User;
+import com.example.forum.models.dto.User;
 import com.example.forum.service.user.UserService;
 
 @RestController

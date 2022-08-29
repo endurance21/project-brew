@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.web.multipart.MultipartFile;
-
-import com.example.forum.dto.Post;
+import com.example.forum.models.dto.Post;
 
 public interface PostService {
     List<Post>getAllPost();

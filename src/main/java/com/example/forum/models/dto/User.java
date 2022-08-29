@@ -1,4 +1,4 @@
-package com.example.forum.dto;
+package com.example.forum.models.dto;
 
 import lombok.Data;
 

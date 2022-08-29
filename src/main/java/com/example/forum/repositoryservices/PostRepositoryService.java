@@ -2,7 +2,7 @@ package com.example.forum.repositoryservices;
 
 import java.util.List;
 
-import com.example.forum.dto.Post;
+import com.example.forum.models.dto.Post;
 
 
 public interface PostRepositoryService {

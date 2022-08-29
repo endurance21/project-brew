@@ -10,7 +10,6 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
 import org.mockito.quality.Strictness;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
@@ -22,7 +21,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 
 import com.example.forum.ForumApplication;
-import com.example.forum.dto.Post;
+import com.example.forum.models.dto.Post;
 import com.example.forum.repositoryservices.post.PostRepositoryService;
 import com.example.forum.service.post.PostServiceImpl;
 import com.example.forum.utils.FixtureHelpers;

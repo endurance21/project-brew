@@ -1,7 +1,6 @@
 package com.example.forum.exchanges.Auth;
 
-import com.example.forum.dto.GoogleUserDetails;
-import com.example.forum.dto.User;
+import com.example.forum.models.dto.User;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

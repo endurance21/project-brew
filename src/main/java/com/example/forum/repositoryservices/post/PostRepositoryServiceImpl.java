@@ -1,12 +1,9 @@
 package com.example.forum.repositoryservices.post;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Set;
 
 // import javax.management.Query;
 
@@ -21,7 +18,7 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 import org.modelmapper.ModelMapper;
 
-import com.example.forum.dto.Post;
+import com.example.forum.models.dto.Post;
 import com.example.forum.models.PostEntity;
 import com.example.forum.repository.PostRepository;
 import com.mongodb.client.result.DeleteResult;
@@ -48,7 +45,7 @@ public class PostRepositoryServiceImpl implements PostRepositoryService{
 
     @Override
     public List<Post> getAllPost() {
-        List<PostEntity> postEntity = postRepository.findAll();
+        List<PostEntity> postEntity = (List<PostEntity>) postRepository.findAll();
         List<Post> post = new ArrayList<>();
         for(PostEntity tempEntity:postEntity){
             Post post1 = modelMapper.map(tempEntity, Post.class);

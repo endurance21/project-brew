@@ -1,8 +1,6 @@
 package com.example.forum.repositoryservices.comment;
 
-import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,14 +10,11 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
-import org.bson.conversions.Bson;
 import org.modelmapper.ModelMapper;
 
-import com.example.forum.dto.Comment;
+import com.example.forum.models.dto.Comment;
 import com.example.forum.models.CommentEntity;
 import com.example.forum.repository.CommentRepository;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBObject;
 import com.mongodb.client.result.DeleteResult;
 
 @Service

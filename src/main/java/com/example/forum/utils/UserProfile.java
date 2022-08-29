@@ -2,8 +2,8 @@ package com.example.forum.utils;
 
 import java.util.Set;
 
-import com.example.forum.dto.Post;
-import com.example.forum.dto.User;
+import com.example.forum.models.dto.Post;
+import com.example.forum.models.dto.User;
 
 public class UserProfile {
     private User user;

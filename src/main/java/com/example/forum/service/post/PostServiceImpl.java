@@ -1,15 +1,13 @@
 package com.example.forum.service.post;
 
 import java.io.IOException;
-import java.sql.Timestamp;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.forum.dto.Post;
+import com.example.forum.models.dto.Post;
 import com.example.forum.repositoryservices.post.PostRepositoryService;
 
 @Service

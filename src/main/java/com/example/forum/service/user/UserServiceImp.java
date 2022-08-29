@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.forum.dto.User;
+import com.example.forum.models.dto.User;
 import com.example.forum.repositoryservices.user.UserRepositoryService;
 
 @Service

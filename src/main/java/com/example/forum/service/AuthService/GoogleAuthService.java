@@ -3,7 +3,7 @@ package com.example.forum.service.AuthService;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import com.example.forum.dto.GoogleUserDetails;
+import com.example.forum.models.dto.GoogleUserDetails;
 
 public interface GoogleAuthService {
 

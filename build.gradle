@@ -6,7 +6,7 @@ plugins {
 // apply plugin: 'maven'
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+//sourceCompatibility = '11'
 
 configurations {
 	compileOnly {
@@ -35,6 +35,11 @@ dependencies {
 	implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
 	// implementation 'commons-io:commons-io:2.11.0'
 	implementation 'com.auth0:java-jwt:4.0.0'
+
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
+
+
 
 
 }

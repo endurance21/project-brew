@@ -2,11 +2,8 @@ package com.example.forum.Filters;
 
 import java.io.IOException;
 
-import javax.management.RuntimeErrorException;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -15,8 +12,8 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.example.forum.dto.GoogleUserDetails;
-import com.example.forum.dto.User;
+import com.example.forum.models.dto.GoogleUserDetails;
+import com.example.forum.models.dto.User;
 import com.example.forum.service.AuthService.GoogleAuthService;
 import com.example.forum.service.user.UserService;
 import com.example.forum.utils.JwtManager;

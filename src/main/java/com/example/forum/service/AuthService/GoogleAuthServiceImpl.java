@@ -4,10 +4,9 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.Collections;
 
-import org.apache.tomcat.util.digester.SystemPropertySource;
 import org.springframework.stereotype.Service;
 
-import com.example.forum.dto.GoogleUserDetails;
+import com.example.forum.models.dto.GoogleUserDetails;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken.Payload;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdTokenVerifier;

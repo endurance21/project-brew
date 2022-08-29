@@ -2,7 +2,7 @@ package com.example.forum.repositoryservices.comment;
 
 import java.util.ArrayList;
 
-import com.example.forum.dto.Comment;
+import com.example.forum.models.dto.Comment;
 
 public interface CommentRepositoryService {
 
