@@ -7,7 +7,8 @@ import java.util.Optional;
 
 // import javax.management.Query;
 
-import org.springframework.beans.factory.annotation.Autowired; 
+import org.apache.lucene.search.Sort;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.FindAndModifyOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -15,6 +16,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Update;
 
 
+import org.springframework.data.util.Streamable;
 import org.springframework.stereotype.Service;
 import org.modelmapper.ModelMapper;
 
@@ -45,7 +47,11 @@ public class PostRepositoryServiceImpl implements PostRepositoryService{
 
     @Override
     public List<Post> getAllPost() {
-        List<PostEntity> postEntity = (List<PostEntity>) postRepository.findAll();
+        Iterable it = postRepository.findAll();
+
+
+        List<PostEntity> postEntity = Streamable.of(it).toList() ;
+
         List<Post> post = new ArrayList<>();
         for(PostEntity tempEntity:postEntity){
             Post post1 = modelMapper.map(tempEntity, Post.class);

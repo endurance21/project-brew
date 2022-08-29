@@ -21,6 +21,7 @@ public class ElasticSearchConfig extends AbstractElasticsearchConfiguration {
                 .connectedTo("my-deployment-7f4103.es.us-central1.gcp.cloud.es.io:443")
                 .usingSsl()
                 .withBasicAuth("elastic", "8y2l3E4QLroqCw7WQ4lmGMXS")
+
                 .build();
 
         return RestClients.create(clientConfiguration).rest();

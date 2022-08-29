@@ -36,16 +36,16 @@ import lombok.NoArgsConstructor;
 @Document(indexName = "post")
 @NoArgsConstructor
 public class PostEntity{
-//    private String title;
+    private String title;
     @Id
     private String postId;
-//    @CreatedDate
-//    private Date createdDate;
-//    @LastModifiedDate
-//    private Date lastModifiedDate;
-//    private String userId;
-//    private Date createdOn;
-//    private String description;
-//    private String imageUrl;
-//    private Set<String> likedBy = new HashSet<>();
+    @CreatedDate
+    private Date createdDate;
+    @LastModifiedDate
+    private Date lastModifiedDate;
+    private String userId;
+    private Date createdOn;
+    private String description;
+    private String imageUrl;
+    private Set<String> likedBy = new HashSet<>();
 }

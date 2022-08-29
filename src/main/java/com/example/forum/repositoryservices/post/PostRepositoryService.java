@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.example.forum.models.dto.Post;
+import org.apache.lucene.search.Sort;
 
 
 public interface PostRepositoryService {
